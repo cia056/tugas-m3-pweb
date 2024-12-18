@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hotel</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gaya untuk keseluruhan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo {
+            width: 120px;
+            height: 120px;
+            margin-right: 20px; /* Jarak antara logo dan teks */
+        }
+
+        header h1 {
+            font-size: 32px; /* Memperbesar ukuran font header */
+            margin: 0;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #444;
+            text-align: left;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Kontainer utama */
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        /* Sidebar kiri */
+        .sidebar {
+            width: 25%;
+            background-color: #333;
+            color: red;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .video-thumbnail {
+            background-color: #555;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 14px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Galeri konten */
+        .gallery {
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://thumbs.dreamstime.com/z/hotel-logo-template-background-58362974.jpg" alt="logo best hotel" class="logo">
+        <h1>Best Hotel</h1>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kamar</a></li>
+            <li><a href="#">Fasilitas</a></li>
+            <ul>
+                <li><a href="#petualangan-alam">Petualangan Alam</a></li>
+                <li><a href="#kolam-renang">Kolam Renang</a>
+                    <ul>
+                        <li><a href="#sumber-air-panas">Sumber Air Panas</a></li>
+                        <li><a href="#kolam-anak-dewasa">Kolam Renang Anak & Dewasa</a>
+                            <ul>
+                                <li><a href="#reguler">Reguler</a></li>
+                                <li><a href="#premium">Premium</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#pusat-kebugaran">Pusat Kebugaran</a></li>
+                <li><a href="#ruang-rapat">Ruang Rapat</a></li>
+            </ul>
+            <li><a href="#">Pesan Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <!-- Kontainer utama -->
+    <div class="container">
+        <!-- Sidebar kiri -->
+        <div class="sidebar">
+            <h2>Video Tour</h2>
+            <div class="video-thumbnail">Video 1</div>
+            <div class="video-thumbnail">Video 2</div>
+            <div class="video-thumbnail">Video 3</div>
+            <div class="video-thumbnail">Video 4</div>
+        </div>
+
+        <!-- Galeri konten -->
+        <div class="gallery">
+            <img src="kamar1.jpg" alt="Kamar 1">
+            <img src="kamar2.jpg" alt="Kamar 2">
+            <img src="kamar3.jpg" alt="Kamar 3">
+            <img src="kamar4.jpg" alt="Kamar 4">
+            <img src="kamar5.jpg" alt="Kamar 5">
+            <img src="kamar6.jpg" alt="Kamar 6">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Best Hotel. Hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>

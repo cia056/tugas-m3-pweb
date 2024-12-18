@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hotel</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gaya untuk keseluruhan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo {
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #444;
+            text-align: left;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dropdown */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            padding: 10px;
+            list-style-type: none;
+            top: 100%;
+            left: 0;
+            width: 200px;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            position: relative;
+        }
+
+        /* Dropdown Kolam Renang */
+        nav ul li ul li ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            padding: 10px;
+            background-color: #666;
+        }
+
+        nav ul li ul li:hover > ul {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #333;
+            color: red;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .video-thumbnail {
+            background-color: #555;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 14px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery {
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://thumbs.dreamstime.com/z/hotel-logo-template-background-58362974.jpg" alt="logo best hotel" class="logo">
+        <h1>Best Hotel</h1>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kamar</a></li>
+            <li><a href="#">Fasilitas</a>
+                <ul>
+                    <li><a href="#petualangan-alam">Petualangan Alam</a></li>
+                    <li><a href="#kolam-renang">Kolam Renang</a>
+                        <ul>
+                            <li><a href="#sumber-air-panas">Sumber Air Panas</a></li>
+                            <li><a href="#kolam-anak-dewasa">Kolam Renang Anak & Dewasa</a>
+                                <ul>
+                                    <li><a href="#reguler">Reguler</a></li>
+                                    <li><a href="#premium">Premium</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#pusat-kebugaran">Pusat Kebugaran</a></li>
+                    <li><a href="#ruang-rapat">Ruang Rapat</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pesan Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <!-- Kontainer utama -->
+    <div class="container">
+        <!-- Sidebar kiri -->
+        <div class="sidebar">
+            <h2>Video Tour</h2>
+            <div class="video-thumbnail">Video 2</div>
+            <div class="video-thumbnail">Video 3</div>
+            <div class="video-thumbnail">Video 4</div>
+        </div>
+
+        <!-- Galeri konten -->
+        <div class="gallery">
+            <img src="https://cdn.idntimes.com/content-images/post/20180927/e146cff8285ba6fd61a2f07ab5f550f0.jpg" alt="Kamar 1">
+            <img src="https://arsitagx-master-article.s3-ap-southeast-1.amazonaws.com/article-photo/275/Kamar-Hotel-Penuh-Gaya-Foto-1.jpg" alt="Kamar 2">
+            <img src="https://blog.bookingtogo.com/wp-content/uploads/2021/12/jenis-jenis-kamar-hotel.jpg" alt="Kamar 3">
+            <img src="https://arsitagx-master-article.s3-ap-southeast-1.amazonaws.com/article-photo/275/Kamar-Hotel-Penuh-Gaya-Foto-1.jpg" alt="Kamar 4">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.ZOh7PIxm4Ls9k_i23BC9ggHaEo&pid=Api&P=0&h=180" alt="Kamar 5">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.aXE6OBshOC_UhA3_8nWRCgHaE8&pid=Api&P=0&h=180" alt="Kamar 6">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Best Hotel. Hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>
